@@ -1,0 +1,60 @@
+.customers {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.customers__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  grid-gap: 30px;
+  padding-left: 0;
+  padding-right: 0;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.customers__item {
+  height: 92px;
+  fill: var(--icon-team-color);
+  transition: var(--animation);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  @media screen and (max-width: 767px) {
+    width: 210px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}
+.customers__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  border: 1px solid var(--icon-team-color);
+  border-radius: 4px;
+  color: #afb1b8;
+  background-color: #fff;
+  transition: --animation;
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+.customers__icon {
+  fill: currentColor;
+}

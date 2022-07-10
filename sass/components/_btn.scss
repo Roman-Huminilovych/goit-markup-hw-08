@@ -1,0 +1,78 @@
+.hero-btn {
+  font-family: var(--primary-font-family);
+  @include font($fw: 700, $fs: 12px, $lh: 1.87, $ls: 0.06em);
+  cursor: pointer;
+
+  display: inline-block;
+  min-width: 140px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 7px;
+  align-items: center;
+  text-align: center;
+
+  color: var(--primary-text-color-theme-light);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: var(--animation);
+  &:hover,
+  &:focus {
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+  @media screen and (min-width: 480px) {
+    padding: 10px 32px;
+    font-size: 16px;
+    min-width: 200px;
+  }
+}
+
+.form-btn {
+  font-family: var(--primary-font-family);
+  @include font($fw: 700, $fs: 16px, $lh: 1.87, $ls: 0.06em);
+  cursor: pointer;
+
+  color: var(--primary-text-color-theme-light);
+  background-color: var(--accent-color);
+  border: 1px solid transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  padding: 10px 32px;
+  min-width: 200px;
+  transition: var(--animation);
+  &:hover,
+  &:focus {
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+}
+.footer-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  padding: 8px 28px;
+  margin-left: 10px;
+  height: 50px;
+  border-radius: 4px;
+
+  background-color: var(--accent-color);
+  color: var(--primary-text-color-theme-light);
+  transition: var(--animation);
+  @include font($fw: 700, $fs: 16px, $lh: 1.87, $ls: 0.06em);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  @media (min-width: 1200px) {
+    margin-top: 0px;
+  }
+}

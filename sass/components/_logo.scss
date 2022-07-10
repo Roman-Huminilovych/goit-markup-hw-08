@@ -1,0 +1,18 @@
+/* ========ЛОГО ХЕДЕРА======= */
+.logo {
+  font-family: var(--secondary-font-family);
+  @include font($fw: 700, $fs: 26px, $lh: 1.19, $ls: 0.03em);
+  color: var(--accent-color);
+}
+
+/* ========НА ФУТЕР ЛОГО======= */
+.logo-theme-dark {
+  font-family: var(--secondary-font-family);
+  @include font($fw: 700, $fs: 26px, $lh: 1.19, $ls: 0.03em);
+  color: var(--primary-text-color-theme-dark);
+}
+.logo-theme-light {
+  font-family: var(--secondary-font-family);
+  @include font($fw: 700, $fs: 26px, $lh: 1.19, $ls: 0.03em);
+  color: var(--primary-text-color-theme-light);
+}

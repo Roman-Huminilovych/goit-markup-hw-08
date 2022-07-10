@@ -1,0 +1,243 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+  visibility: visible;
+  opacity: 1;
+  transition: var(--animation);
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: var(--animation);
+
+  min-height: 581px;
+  width: 320px;
+
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    min-height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
+}
+.button-close {
+  display: flex;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-close-modal {
+  width: 100%;
+  height: 100%;
+  fill: #000;
+  transition: var(--animation);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.form {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
+}
+.form-title {
+  @include font($fw: 700, $fs: 20px, $lh: 1.15, $ls: 0.03em);
+  text-align: center;
+  color: var(--primary-text-color-theme-dark);
+}
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.top-title {
+  margin-top: 12px;
+}
+.form-label,
+.comment-label {
+  display: flex;
+  justify-content: left;
+  @include font($fw: 400, $fs: 12px, $lh: 1.17, $ls: 0.01em);
+
+  color: var(--secondary-text-color-theme-dark);
+  margin-bottom: 4px;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 11px 42px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color var(--animation);
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
+}
+
+.input-icon {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  width: 18px;
+  height: 18px;
+  transition: var(--animation);
+  .form-input:hover ~ &,
+  .form-input:focus ~ & {
+    fill: var(--accent-color);
+  }
+}
+
+textarea {
+  padding: 12px 16px;
+  height: 120px;
+  @include font($fw: 400, $fs: 12px, $lh: 1.17, $ls: 0.01em);
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color var(--animation);
+  cursor: pointer;
+  resize: none;
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+}
+
+.comment::placeholder {
+  @include font($fw: 400, $fs: 12px, $lh: 1.17, $ls: 0.01em);
+  color: rgba(117, 117, 117);
+}
+
+.form-field-chek {
+  margin-top: 25px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 14px;
+  }
+}
+
+.policy-icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 2px;
+}
+
+.checkbox {
+  display: inline-block;
+  align-items: center;
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.policy-label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-label-policy {
+  @include font($fw: 400, $fs: 12px, $lh: 1.17, $ls: 0.01em);
+
+  color: var(--secondary-text-color-theme-dark);
+  @media screen and (min-width: 320px) {
+    font-size: 10px;
+    line-height: 1.11;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+.policy-link {
+  color: var(--accent-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+
+  @media screen and (min-width: 320px) {
+    font-size: 10px;
+    line-height: 1.11;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.form-icon-policy {
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  box-sizing: border-box;
+  border-radius: 2px;
+  .checkbox:checked + & {
+    background: #2196f3;
+    border: none;
+    transition: var(--animation);
+  }
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}

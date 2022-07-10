@@ -1,0 +1,10 @@
+.title__description {
+  @include font($fw: 700, $fs: 28px, $lh: 1.17, $ls: 0.03em);
+  text-align: center;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
