@@ -107,7 +107,7 @@
 
 /* ========FOOTER-FORM======= */
 
-.footer-widget-form {
+.footer-submit {
   margin-top: 60px;
   @media screen and (min-width: 1200px) {
     display: inline-flex;
@@ -116,10 +116,7 @@
     margin-top: 0;
   }
 }
-
 .footer-submit-form {
-  display: flex;
-
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;

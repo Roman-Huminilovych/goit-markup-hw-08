@@ -1431,11 +1431,11 @@ textarea:hover, textarea:focus {
 }
 
 /* ========FOOTER-FORM======= */
-.footer-widget-form {
+.footer-submit {
   margin-top: 60px;
 }
 @media screen and (min-width: 1200px) {
-  .footer-widget-form {
+  .footer-submit {
     display: inline-flex;
     flex-direction: column;
     margin-left: 93px;
@@ -1443,9 +1443,6 @@ textarea:hover, textarea:focus {
   }
 }
 
-.footer-submit-form {
-  display: flex;
-}
 @media screen and (min-width: 768px) {
   .footer-submit-form {
     display: flex;
