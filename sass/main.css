@@ -147,7 +147,8 @@ body {
   justify-content: center;
   border: none;
   padding: 8px 28px;
-  margin-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
   height: 50px;
   border-radius: 4px;
   background-color: var(--accent-color);
@@ -1430,11 +1431,11 @@ textarea:hover, textarea:focus {
 }
 
 /* ========FOOTER-FORM======= */
-.footer-submit {
+.footer-widget-form {
   margin-top: 60px;
 }
 @media screen and (min-width: 1200px) {
-  .footer-submit {
+  .footer-widget-form {
     display: inline-flex;
     flex-direction: column;
     margin-left: 93px;
@@ -1442,6 +1443,9 @@ textarea:hover, textarea:focus {
   }
 }
 
+.footer-submit-form {
+  display: flex;
+}
 @media screen and (min-width: 768px) {
   .footer-submit-form {
     display: flex;
