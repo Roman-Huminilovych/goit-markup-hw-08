@@ -154,6 +154,8 @@
   border: none;
   margin-left: auto;
   cursor: pointer;
+  padding: 0;
+  margin: 0;
 
   &:hover,
   &:focus {
@@ -175,6 +177,7 @@
   border: none;
   margin-left: auto;
   cursor: pointer;
+  padding: 0;
 
   &:hover,
   &:focus {
@@ -227,7 +230,7 @@
 
 .mob-menu-list__social-item {
   position: relative;
-  @include font($fw: 500, $fs: 18px, $lh: 1.22, $ls: 0.02em);
+  @include font($fw: 500, $fs: 14px, $lh: 1.22, $ls: 0.02em);
   color: var(--accent-color);
 
   &:not(:first-child)::before {

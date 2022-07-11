@@ -33,7 +33,9 @@
               <a class="menu-link link" href="./index.html">Студія</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link link accent current" href="./portfolio.html">Портфоліо</a>
+              <a class="menu-link link accent current" href="./portfolio.html"
+                >Портфоліо</a
+              >
             </li>
             <li class="menu-item">
               <a class="menu-link link" href="#contact">Контакти</a>
@@ -89,7 +91,9 @@
               >
             </li>
             <li class="mob-menu-list__item">
-              <a class="mob-menu-list__link link mob-menu-list__link--current link" href="./portfolio.html"
+              <a
+                class="mob-menu-list__link link mob-menu-list__link--current link"
+                href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
@@ -122,43 +126,78 @@
               <button class="btn-element__filter" type="button">Все</button>
             </li>
             <li class="filter__element">
-              <button class="btn-element__filter" type="button">Веб-сайти</button>
+              <button class="btn-element__filter" type="button">
+                Веб-сайти
+              </button>
             </li>
             <li class="filter__element">
-              <button class="btn-element__filter" type="button">Застосунки</button>
+              <button class="btn-element__filter" type="button">
+                Застосунки
+              </button>
             </li>
             <li class="filter__element">
               <button class="btn-element__filter" type="button">Дизайн</button>
             </li>
             <li class="filter__element">
-              <button class="btn-element__filter" type="button">Маркетинг</button>
+              <button class="btn-element__filter" type="button">
+                Маркетинг
+              </button>
             </li>
           </ul>
 
           <ul class="portfolio__container list">
             <li class="portfolio__element">
-               <a class="portfolio__element-link link" href=""></a>
-              <div class="portfolio-overlay">
-                <div class="portfolio-overlay__wrapper">
-                <div class="portfolio-overlay__contents">
-                <p class="portfolio-overlay__description">
-                  Ресурс пропонує комплексні пропозиції 
-                  з різним рівнем функціоналу та сервісів.
-                   Все це дозволить відвідувачу отримати вичерпні
-                    відомості про компанію або приватну особу.</p>
-                </div>
-              </div>
+              <a class="portfolio__element-link link" href="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-overlay__wrapper">
+                    <div class="portfolio-overlay__contents">
+                      <p class="portfolio-overlay__description">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                        функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати вичерпні відомості про компанію або приватну
+                        особу.
+                      </p>
+                    </div>
+                  </div>
 
-              
-                <img
-                  class="img"
-                  srcset="./images/portfolio/img-0.jpg 1x,
-                   ./images/portfolio/img-0-2x.jpg 2x"
-                  src="./images/portfolio/img-0.jpg"
-                  alt="ноутбук, веб-сайт, скрін "
-                  width="370"
-                  height="294"
-                />
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-0-dek.jpg   1x,
+                        ./images/portfolio/img-0-dek2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-0-tab.jpg   1x,
+                        ./images/portfolio/img-0-tab2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-0-mob.jpg   1x,
+                        ./images/portfolio/img-0-mob2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-0.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
 
                 <div class="portfolio-card">
@@ -168,29 +207,58 @@
               </a>
             </li>
             <li class="portfolio__element">
-
-                      <div class="portfolio-overlay">
-                <div class="portfolio-overlay__wrapper">
-                <div class="portfolio-overlay__contents">
-                <p class="portfolio-overlay__description">
-                  Ресурс пропонує комплексні пропозиції 
-                  з різним рівнем функціоналу та сервісів.
-                   Все це дозволить відвідувачу отримати вичерпні
-                    відомості про компанію або приватну особу.</p>
+              <a class="portfolio__element-link link" href="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-overlay__wrapper">
+                    <div class="portfolio-overlay__contents">
+                      <p class="portfolio-overlay__description">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                        функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати вичерпні відомості про компанію або приватну
+                        особу.
+                      </p>
                     </div>
-                    </div>
+                  </div>
 
-              <a class="link" href="">
-                <img
-                  class="img"
-                  srcset="./images/portfolio/img-1.jpg 1x,
-                   ./images/portfolio/img-1-2x.jpg 2x"
-                  src="./images/portfolio/img-1.jpg"
-                  alt="постер, баскетоболісти із м’ячем"
-                  width="370"
-                  height="294"
-                />
-               </div>
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-1-dek.jpg   1x,
+                        ./images/portfolio/img-1-dek2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-1-tab.jpg   1x,
+                        ./images/portfolio/img-1-tab2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-1-mob.jpg   1x,
+                        ./images/portfolio/img-1-mob2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-1.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
                 <div class="portfolio-card">
                   <h2 class="portfolio__subtitle">
                     Постер New Orlean vs Golden Star
@@ -201,27 +269,58 @@
             </li>
 
             <li class="portfolio__element">
-                      <div class="portfolio-overlay">
-                <div class="portfolio-overlay__wrapper">
-                <div class="portfolio-overlay__contents">
-                <p class="portfolio-overlay__description">
-                  Ресурс пропонує комплексні пропозиції 
-                  з різним рівнем функціоналу та сервісів.
-                   Все це дозволить відвідувачу отримати вичерпні
-                    відомості про компанію або приватну особу.</p>
+              <a class="portfolio__element-link link" href="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-overlay__wrapper">
+                    <div class="portfolio-overlay__contents">
+                      <p class="portfolio-overlay__description">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                        функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати вичерпні відомості про компанію або приватну
+                        особу.
+                      </p>
                     </div>
-                    </div>
+                  </div>
 
-              <a class="link" href="">
-                <img
-                  class="img"
-                  srcset="./images/portfolio/img-2.jpg 1x,
-                   ./images/portfolio/img-2-2x.jpg 2x"
-                  src="./images/portfolio/img-2.jpg"
-                  alt="логотип застосунку ресторана"
-                  width="370"
-                  height="294"
-                /> </div>
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-2-dek.jpg   1x,
+                        ./images/portfolio/img-2-dek2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-2-tab.jpg   1x,
+                        ./images/portfolio/img-2-tab2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-2-mob.jpg   1x,
+                        ./images/portfolio/img-2-mob2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-2.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
                 <div class="portfolio-card">
                   <h2 class="portfolio__subtitle">Ресторан Seafood</h2>
                   <p class="portfolio__description">Застосунок</p>
@@ -230,27 +329,58 @@
             </li>
 
             <li class="portfolio__element">
-                    <div class="portfolio-overlay">
-                <div class="portfolio-overlay__wrapper">
-                <div class="portfolio-overlay__contents">
-                <p class="portfolio-overlay__description">
-                  Ресурс пропонує комплексні пропозиції 
-                  з різним рівнем функціоналу та сервісів.
-                   Все це дозволить відвідувачу отримати вичерпні
-                    відомості про компанію або приватну особу.</p>
+              <a class="portfolio__element-link link" href="">
+                <div class="portfolio-overlay">
+                  <div5 class="portfolio-overlay__wrapper">
+                    <div class="portfolio-overlay__contents">
+                      <p class="portfolio-overlay__description">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                        функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати вичерпні відомості про компанію або приватну
+                        особу.
+                      </p>
                     </div>
-                    </div>
+                  </div5
 
-              <a class="link" href="">
-                <img
-                  class="img"
-                  srcset="./images/portfolio/img-3.jpg 1x,
-                   ./images/portfolio/img-3-2x.jpg 2x"
-                  src="./images/portfolio/img-3.jpg"
-                  alt="навушники"
-                  width="370"
-                  height="294"
-                /></div>
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-3-dek.jpg   1x,
+                        ./images/portfolio/img-3-dek2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-3-tab.jpg   1x,
+                        ./images/portfolio/img-3-tab2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-3-mob.jpg   1x,
+                        ./images/portfolio/img-3-mob2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-3.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
                 <div class="portfolio-card">
                   <h2 class="portfolio__subtitle">Проєкт Prime</h2>
                   <p class="portfolio__description">Маркетинг</p>
@@ -259,27 +389,58 @@
             </li>
 
             <li class="portfolio__element">
-                    <div class="portfolio-overlay">
-                <div class="portfolio-overlay__wrapper">
-                <div class="portfolio-overlay__contents">
-                <p class="portfolio-overlay__description">
-                  Ресурс пропонує комплексні пропозиції 
-                  з різним рівнем функціоналу та сервісів.
-                   Все це дозволить відвідувачу отримати вичерпні
-                    відомості про компанію або приватну особу.</p>
+              <a class="portfolio__element-link link" href="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-overlay__wrapper">
+                    <div class="portfolio-overlay__contents">
+                      <p class="portfolio-overlay__description">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                        функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати вичерпні відомості про компанію або приватну
+                        особу.
+                      </p>
                     </div>
-                    </div>
+                  </div>
 
-              <a class="link" href="">
-                <img
-                  class="img"
-                  srcset="./images/portfolio/img-4.jpg 1x,
-                   ./images/portfolio/img-4-2x.jpg 2x"
-                  src="./images/portfolio/img-4.jpg"
-                  alt="коробки"
-                  width="370"
-                  height="294"
-                /></div>
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-4-dek.jpg   1x,
+                        ./images/portfolio/img-4-dek2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-4-tab.jpg   1x,
+                        ./images/portfolio/img-4-tab2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-4-mob.jpg   1x,
+                        ./images/portfolio/img-4-mob2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-4.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
                 <div class="portfolio-card">
                   <h2 class="portfolio__subtitle">Проєкт Boxes</h2>
                   <p class="portfolio__description">Застосунок</p>
@@ -288,56 +449,120 @@
             </li>
 
             <li class="portfolio__element">
-                    <div class="portfolio-overlay">
-                <div class="portfolio-overlay__wrapper">
-                <div class="portfolio-overlay__contents">
-                <p class="portfolio-overlay__description">
-                  Ресурс пропонує комплексні пропозиції 
-                  з різним рівнем функціоналу та сервісів.
-                   Все це дозволить відвідувачу отримати вичерпні
-                    відомості про компанію або приватну особу.</p>
+              <a class="portfolio__element-link link" href="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-overlay__wrapper">
+                    <div class="portfolio-overlay__contents">
+                      <p class="portfolio-overlay__description">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                        функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати вичерпні відомості про компанію або приватну
+                        особу.
+                      </p>
                     </div>
-                    </div>
+                  </div>
 
-              <a class="link" href="">
-                <img
-                  class="img"
-                  srcset="./images/portfolio/img-5.jpg 1x,
-                   ./images/portfolio/img-5-2x.jpg 2x"
-                  src="./images/portfolio/img-5.jpg"
-                  alt="монітор, веб-сайт, скрін "
-                  width="370"
-                  height="294"
-                /></div>
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-5-dek.jpg   1x,
+                        ./images/portfolio/img-5-dek2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-5-tab.jpg   1x,
+                        ./images/portfolio/img-5-tab2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-5-mob.jpg   1x,
+                        ./images/portfolio/img-5-mob2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-5.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
                 <div class="portfolio-card">
-                  <h2 class="portfolio__subtitle">Inspiration has no Borders</h2>
+                  <h2 class="portfolio__subtitle">
+                    Inspiration has no Borders
+                  </h2>
                   <p class="portfolio__description">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
             <li class="portfolio__element">
-                    <div class="portfolio-overlay">
-                <div class="portfolio-overlay__wrapper">
-                <div class="portfolio-overlay__contents">
-                <p class="portfolio-overlay__description">
-                  Ресурс пропонує комплексні пропозиції 
-                  з різним рівнем функціоналу та сервісів.
-                   Все це дозволить відвідувачу отримати вичерпні
-                    відомості про компанію або приватну особу.</p>
+              <a class="portfolio__element-link link" href="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-overlay__wrapper">
+                    <div class="portfolio-overlay__contents">
+                      <p class="portfolio-overlay__description">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                        функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати вичерпні відомості про компанію або приватну
+                        особу.
+                      </p>
                     </div>
-                    </div>
+                  </div>
 
-              <a class="link" href="">
-                <img
-                  class="img"
-                  srcset="./images/portfolio/img-6.jpg 1x,
-                       ./images/portfolio/img-6-2x.jpg 2x"
-                  src="./images/portfolio/img-6.jpg"
-                  alt="журнал"
-                  width="370"
-                  height="294"
-                /></div>
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-6-dek.jpg   1x,
+                        ./images/portfolio/img-6-dek2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-6-tab.jpg   1x,
+                        ./images/portfolio/img-6-tab2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-6-mob.jpg   1x,
+                        ./images/portfolio/img-6-mob2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-6.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
                 <div class="portfolio-card">
                   <h2 class="portfolio__subtitle">
                     Видавництво Limited Edition
@@ -348,27 +573,58 @@
             </li>
 
             <li class="portfolio__element">
-                    <div class="portfolio-overlay">
-                <div class="portfolio-overlay__wrapper">
-                <div class="portfolio-overlay__contents">
-                <p class="portfolio-overlay__description">
-                  Ресурс пропонує комплексні пропозиції 
-                  з різним рівнем функціоналу та сервісів.
-                   Все це дозволить відвідувачу отримати вичерпні
-                    відомості про компанію або приватну особу.</p>
+              <a class="portfolio__element-link link" href="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-overlay__wrapper">
+                    <div class="portfolio-overlay__contents">
+                      <p class="portfolio-overlay__description">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                        функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати вичерпні відомості про компанію або приватну
+                        особу.
+                      </p>
                     </div>
-                    </div>
+                  </div>
 
-              <a class="link" href="">
-                <img
-                  class="img"
-                  srcset="./images/portfolio/img-7.jpg 1x,
-                   ./images/portfolio/img-7-2x.jpg 2x"
-                  src="./images/portfolio/img-7.jpg"
-                  alt="бірка"
-                  width="370"
-                  height="294"
-                /></div>
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-7-dek.jpg   1x,
+                        ./images/portfolio/img-7-dek2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-7-tab.jpg   1x,
+                        ./images/portfolio/img-7-tab2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-7-mob.jpg   1x,
+                        ./images/portfolio/img-7-mob2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-7.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
                 <div class="portfolio-card">
                   <h2 class="portfolio__subtitle">Проєкт LAB</h2>
                   <p class="portfolio__description">Маркетинг</p>
@@ -377,27 +633,58 @@
             </li>
 
             <li class="portfolio__element">
-                    <div class="portfolio-overlay">
-                <div class="portfolio-overlay__wrapper">
-                <div class="portfolio-overlay__contents">
-                <p class="portfolio-overlay__description">
-                  Ресурс пропонує комплексні пропозиції 
-                  з різним рівнем функціоналу та сервісів.
-                   Все це дозволить відвідувачу отримати вичерпні
-                    відомості про компанію або приватну особу.</p>
+              <a class="portfolio__element-link link" href="">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-overlay__wrapper">
+                    <div class="portfolio-overlay__contents">
+                      <p class="portfolio-overlay__description">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                        функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати вичерпні відомості про компанію або приватну
+                        особу.
+                      </p>
                     </div>
-                    </div>
+                  </div>
 
-              <a class="link" href="">
-                <img
-                  class="img"
-                  srcset="./images/portfolio/img-8.jpg 1x,
-                   ./images/portfolio/img-8-2x.jpg 2x"
-                  src="./images/portfolio/img-8.jpg"
-                  alt="ноутбук, руки, окуляри, на робочому столі, застосунок, скрін "
-                  width="370"
-                  height="294"
-                /></div>
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-8-dek.jpg   1x,
+                        ./images/portfolio/img-8-dek2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-8-tab.jpg   1x,
+                        ./images/portfolio/img-8-tab2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-8-mob.jpg   1x,
+                        ./images/portfolio/img-8-mob2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-8.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
                 <div class="portfolio-card">
                   <h2 class="portfolio__subtitle">Growing Business</h2>
                   <p class="portfolio__description">Застосунок</p>
@@ -408,7 +695,6 @@
         </div>
       </section>
 
-    
       <footer id="contact" class="footer">
         <div class="container">
           <div class="footer__flex">
@@ -521,6 +807,6 @@
         </div>
       </footer>
     </main>
-        <script src="./js/menu.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

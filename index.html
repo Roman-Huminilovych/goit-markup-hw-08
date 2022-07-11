@@ -336,14 +336,43 @@
           <h2 class="title__description">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__element">
-              <img
-                class="img"
-                srcset="./images/team/igor.jpg 1x, ./images/team/igor2x.jpg 2x"
-                src="./images/team/igor.jpg"
-                alt="програміст дизайнер чоловік в окулярах"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/igor-dek.jpg   1x,
+                    ./images/team/igor-dek2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Набір зображень для планшетних екранів -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/igor-tab.jpg   1x,
+                    ./images/team/igor-tab2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Набір зображень для мобільних екранів -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/igor-mob.jpg   1x,
+                    ./images/team/igor-mob2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                <img
+                  class="img"
+                  src="./images/team/igor.jpg"
+                  alt="Продукт дизайнер"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="about-card">
                 <h3 class="subtitle-name">Ігор Дем'яненко</h3>
                 <p class="description-position">Product Designer</p>
@@ -380,14 +409,43 @@
               </div>
             </li>
             <li class="team__element">
-              <img
-                class="img"
-                srcset="./images/team/olga.jpg 1x, ./images/team/olga2x.jpg 2x"
-                src="./images/team/olga.jpg"
-                alt="програміст розробник жеінка в окулярах"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/olga-dek.jpg   1x,
+                    ./images/team/olga-dek2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Набір зображень для планшетних екранів -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/olga-tab.jpg   1x,
+                    ./images/team/olga-tab2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Набір зображень для мобільних екранів -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/olga-mob.jpg   1x,
+                    ./images/team/olga-mob2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                <img
+                  class="img"
+                  src="./images/team/olga.jpg"
+                  alt="розробниця"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="about-card">
                 <h3 class="subtitle-name">Ольга Репіна</h3>
                 <p class="description-position">Frontend Developer</p>
@@ -426,17 +484,43 @@
             </li>
 
             <li class="team__element">
-              <img
-                class="img"
-                srcset="
-                  ./images/team/nikolay.jpg   1x,
-                  ./images/team/nikolay2x.jpg 2x
-                "
-                src="./images/team/nikolay.jpg"
-                alt="маркетолог чоловік"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/nikolay-dek.jpg   1x,
+                    ./images/team/nikolay-dek2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Набір зображень для планшетних екранів -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/nikolay-tab.jpg   1x,
+                    ./images/team/nikolay-tab2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Набір зображень для мобільних екранів -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/nikolay-mob.jpg   1x,
+                    ./images/team/nikolay-mob2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                <img
+                  class="img"
+                  src="./images/team/nikolay.jpg"
+                  alt="маркетолог"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="about-card">
                 <h3 class="subtitle-name">Микола Тарасов</h3>
                 <p class="description-position">Marketing</p>
@@ -475,17 +559,43 @@
             </li>
 
             <li class="team__element">
-              <img
-                class="img"
-                srcset="
-                  ./images/team/misha.jpg   1x,
-                  ./images/team/misha2x.jpg 2x
-                "
-                src="./images/team/misha.jpg"
-                alt="дизайнер в окулярах"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/misha-dek.jpg   1x,
+                    ./images/team/misha-dek2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Набір зображень для планшетних екранів -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/misha-tab.jpg   1x,
+                    ./images/team/misha-tab2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Набір зображень для мобільних екранів -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/misha-mob.jpg   1x,
+                    ./images/team/misha-mob2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                <img
+                  class="img"
+                  src="./images/team/misha.jpg"
+                  alt="UI Дизайнер"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="about-card">
                 <h3 class="subtitle-name">Михайло Єрмаков</h3>
                 <p class="description-position">UI Designer</p>
