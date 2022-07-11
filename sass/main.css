@@ -1234,7 +1234,6 @@ textarea:hover, textarea:focus {
 }
 
 .portfolio__element {
-  width: 370px;
   cursor: pointer;
   transition: var(--animation);
 }
