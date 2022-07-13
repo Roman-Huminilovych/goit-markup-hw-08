@@ -26,10 +26,6 @@
   }
 }
 
-.filter__element {
-  margin-right: 8px;
-}
-
 .btn-element__filter {
   font-family: var(--primary-font-family);
   @include font($fw: 500, $fs: 16px, $lh: 1.62, $ls: 0.03em);
@@ -99,7 +95,7 @@
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
-  transition: transform var(--animation);
+  transition: var(--animation);
 
   .portfolio__element:hover & {
     transform: translateY(0);
@@ -113,7 +109,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: transform var(--animation);
+  transition: var(--animation);
   &:hover {
     opacity: 1;
   }

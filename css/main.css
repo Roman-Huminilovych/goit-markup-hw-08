@@ -994,9 +994,9 @@ textarea:hover, textarea:focus {
 }
 
 .team__element {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 479px) {
   .team__element {
@@ -1128,7 +1128,7 @@ textarea:hover, textarea:focus {
   border-radius: 4px;
   color: #afb1b8;
   background-color: #fff;
-  transition: --animation;
+  transition: var(--animation);
 }
 .customers__link:focus, .customers__link:hover {
   color: var(--accent-color);
@@ -1168,10 +1168,6 @@ textarea:hover, textarea:focus {
   .filter {
     margin-bottom: 50px;
   }
-}
-
-.filter__element {
-  margin-right: 8px;
 }
 
 .btn-element__filter {
@@ -1248,7 +1244,7 @@ textarea:hover, textarea:focus {
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition: transform var(--animation);
+  transition: var(--animation);
 }
 .portfolio__element:hover .portfolio-overlay__wrapper {
   transform: translateY(0);
@@ -1261,7 +1257,7 @@ textarea:hover, textarea:focus {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: transform var(--animation);
+  transition: var(--animation);
 }
 .portfolio-overlay__contents:hover {
   opacity: 1;
@@ -1413,27 +1409,6 @@ textarea:hover, textarea:focus {
   display: flex;
   justify-content: space-between;
   justify-content: center;
-}
-@media screen and (min-width: 480px) {
-  .footer-soc-list {
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer-soc-list {
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-soc-list {
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
-  }
 }
 
 .footer-soc-item {

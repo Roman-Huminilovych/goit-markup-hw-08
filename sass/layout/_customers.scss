@@ -48,7 +48,7 @@
   border-radius: 4px;
   color: #afb1b8;
   background-color: #fff;
-  transition: --animation;
+  transition: var(--animation);
   &:focus,
   &:hover {
     color: var(--accent-color);
